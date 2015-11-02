@@ -1,5 +1,7 @@
 SELECT
-	u.id,
+	CONCAT(u.id,'',q.id) AS uniqueId,
+    u.id,
+    q.id,
 	u.firstname,
 	u.lastname,
 	q.`name`,
