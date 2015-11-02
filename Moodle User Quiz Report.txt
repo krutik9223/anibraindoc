@@ -1,0 +1,19 @@
+SELECT
+	u.id,
+	u.firstname,
+	u.lastname,
+	q.`name`,
+	gi.gradepass
+FROM
+	mdl_user AS u
+LEFT JOIN mdl_quiz_grades AS qg ON qg.userid = u.id
+LEFT JOIN mdl_quiz AS q ON q.id = qg.quiz
+LEFT JOIN mdl_grade_items AS gi ON gi.iteminstance = q.id AND gi.itemname = q.`name` AND gi.itemmodule = 'quiz'
+WHERE
+	u.confirmed = 1
+AND u.deleted = 0
+AND u.suspended = 0
+AND u.id > 2
+AND qg.quiz IS NOT NULL
+ORDER BY
+	u.id ASC

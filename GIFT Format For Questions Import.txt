@@ -1,0 +1,35 @@
+﻿//Multiple Choice with single right answer
+::question1::Who's buried in Grant's tomb?{=Grant ~no one ~Napoleon ~Churchill ~Mother Teresa }
+
+//Multiple Choice with multiple right answer
+::question2::What two people are entombed in Grant's tomb?{
+    ~%-100%No one
+    ~%50%Grant
+    ~%50%Grant's wife
+    ~%-100%Grant's father
+}
+
+//True-false
+::question3::Grant was buried in a tomb in New York City.{T}
+
+::question4::The sun rises in the West.{FALSE}
+
+//Short answer
+::question5::Who's buried in Grant's tomb?{=Grant =Ulysses S. Grant =Ulysses Grant}.
+
+::question6::Two plus two equals {=four =4}.
+
+//Matching
+::question7::Match the following countries with their corresponding capitals. {
+    =Canada -> Ottawa
+    =Italy  -> Rome
+    =Japan  -> Tokyo
+    =India  -> New Delhi
+}
+
+//Numerical questions
+::question8::When was Ulysses S. Grant born?{#1822:5}.
+
+::question9::What is the value of pi (to 3 decimal places)? {#3.14159:0.0005}.
+
+::question10::What is the value of pi (to 3 decimal places)? {#3.141..3.142}.
