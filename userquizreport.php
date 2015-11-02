@@ -137,7 +137,7 @@ echo $OUTPUT->header();
 <form method="post" action="">
 	<table cellpadding="10">
 		<tr>
-			<td colspan="2">
+			<td colspan="3">
 				<h4>Filters</h4>
 			</td>
 		</tr>
@@ -157,16 +157,14 @@ echo $OUTPUT->header();
 					<? } ?>
 				</select>
 			</td>
-		</tr>
-		<tr>
-			<td></td>
 			<td>
 				<input type="submit" name="filter" value="Search" />
 				<input type="submit" name="clear" value="Clear" />
 			</td>
-		</tr>
+		</tr>		
 	</table>
 </form>
+<hr>
 <?php
 if (!empty($table)) {
     echo html_writer::table($table);    
