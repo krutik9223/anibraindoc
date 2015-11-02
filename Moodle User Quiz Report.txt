@@ -1,10 +1,10 @@
 SELECT
 	CONCAT(u.id,'',q.id) AS uniqueId,
-    u.id,
-    q.id,
+	u.id,
+	q.id,
 	u.firstname,
 	u.lastname,
-	q.`name`,
+	q.`name` AS quizname,
 	gi.gradepass
 FROM
 	mdl_user AS u
