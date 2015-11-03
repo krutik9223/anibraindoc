@@ -1,5 +1,4 @@
 <?php
-
 require_once(dirname(__FILE__) . '/../config.php');
 
 $sort         = optional_param('sort', 'fullname', PARAM_ALPHANUM);
